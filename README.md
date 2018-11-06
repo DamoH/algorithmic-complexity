@@ -24,4 +24,5 @@ ToDo
 ----
 - testing
 - refactoring
-- attempt in Java.
+- attempt in Java
+- first test result always unusually high?
