@@ -8,8 +8,8 @@ This is the "Ruby" code for the testing how efficient programmes are and, in thi
 - shuffle
 - sort (using 'shuffle' first so as not to bias the results, as per the course instructions).
 
-I have attached some of my spreadsheet results and a chart plotting them (this is a Mac "numbers" attachment). You will note that the x-axis is not totally linear and is split into 0-1000 (100 steps) and 1000 to 5000 (with 1000 steps).
-\
+I have attached some of my spreadsheet results and a chart plotting them (this is a Mac "numbers" attachment). You will note that the x-axis is not totally linear and is split into 0-1000 (100 steps) and 1000 to 5000 (with 1000 steps).... so in effect this is 2 adjoined charts with different ranges.
+
 
 Note
 ----
@@ -24,4 +24,3 @@ ToDo
 - refactoring
 - remove top AND bottom 10"%" skewed results.
 - attempt in Java.
-.
