@@ -9,7 +9,7 @@ def lastCalc(num)
   for i in 1..100 do
     # myArray.shuffle    # remove when not timing the sort method
     a = Time.now.nsec
-    myArray.shuffle # for last, reverse, shuffle and sort.
+    myArray.last # for last, reverse, shuffle and sort.
     b = Time.now.nsec
     results << (b - a)
     i += 1
