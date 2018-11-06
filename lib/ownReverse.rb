@@ -1,5 +1,3 @@
-# require_relative 'paramsSetUp'
-
 class OwnReverse
 
   def reverseCalc(num)
