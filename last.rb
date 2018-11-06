@@ -7,15 +7,15 @@ def lastCalc(num)
 
   # working out the time difference '100' times...
   for i in 1..100 do
-    # myArray.shuffle # remove when not timing the sort method
+    # myArray.shuffle    # remove when not timing the sort method
     a = Time.now.nsec
-    myArray.sort
+    myArray.last
     b = Time.now.nsec
     results << (b - a)
     i += 1
   end
   resultsB = results.sort.pop(10)
-  print resultsB # what has been removed - top 10%
+  print resultsB # what has been removed - top 10
   puts ""
   finalArray = results - resultsB
 
