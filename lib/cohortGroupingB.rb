@@ -13,9 +13,9 @@ class CohortGroupingB
     # **************************
       len = (names.length) * 0.005
       for n in 1..len do # always shuffled 100 times
-        names.insert(0, names.delete_at(rand(len)))
+        names.insert(-1, names.delete_at(rand(len)))
       end
-      until x == 16
+      until x == names.length
         my_array[count] << names[x]
         count += 1
         x += 1

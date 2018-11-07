@@ -14,7 +14,7 @@ class OwnShuffle
       # own shuffle algo here....
         len = (myArray.length) * 0.005
         for i in 1..len do # always shuffled 0.5% times of array size
-          myArray.insert(0, myArray.delete_at(rand(len)))
+          myArray.insert(-1, myArray.delete_at(rand(len)))
         end
       # **************************
       b = Time.now.to_f
