@@ -30,6 +30,9 @@ The tests are run 100 times and as a result of some skewed results (at seemingly
 
 ![image](https://user-images.githubusercontent.com/18572799/48225423-b23ff100-e394-11e8-896d-2336799bd1a5.png)
 
+![image](https://user-images.githubusercontent.com/18572799/48225571-1498f180-e395-11e8-9153-b7b9241a562a.png)
+
+
 
 ToDo
 ----
