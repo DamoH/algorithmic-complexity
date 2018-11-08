@@ -33,3 +33,7 @@ ToDo
 - attempt in Java.
 - first test result always unusually high... why?
 - further "own" algorithms as per course suggested notes.
+
+
+
+![image](https://user-images.githubusercontent.com/18572799/48225221-1ada9e00-e394-11e8-90fc-306921cdd552.png)
