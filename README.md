@@ -14,7 +14,7 @@ I have attached some of my spreadsheet results and charts plotting them (these a
 
 Once I was plotting arrays with elements ranging from 50,000 to 1,000,000 did I start noticing curvature of the graph plotting... depending on the efficiency (or lack of) my "own" algorithms ie ownShuffle.rb
 
-I also had problems with the Ruby 'Time.now.nsec' (for registering nanoseconds), as at higher array element volumes it started registering declining and then negative numbers. This was due to "only" the nanoseconds part of the time stamp being registered (discovered after reading the Ruby docs). This seemed to be fixed my switching to a 'Time.now.to_f' method chain.
+I also had problems with the Ruby 'Time.now.nsec' (for registering nanoseconds), as at higher array element volumes it started registering declining and then negative numbers. This was due to "only" the nanoseconds part of the time stamp being registered (discovered after reading the Ruby docs). This seemed to be fixed my switching to a 'Time.now.to_f' method chain, and then multiplying the results, in the 'runner' method, by 1bn (this was tested for similarities with previous low number results).
 
 The CohortGroupingB tests were run with '8' and '16' groups, with no significant difference between the two (so only the x8 size was plotted/charted).
 
