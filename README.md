@@ -26,6 +26,11 @@ These plotted results were initially run from repl.it which didn't seem to be ab
 The tests are run 100 times and as a result of some skewed results (at seemingly only the top end), I removed the "outliers" by using the ".pop" and ".shift" functions to remove the top 10 and bottom 10 results.
 
 
+![image](https://user-images.githubusercontent.com/18572799/48225221-1ada9e00-e394-11e8-90fc-306921cdd552.png)
+
+![image](https://user-images.githubusercontent.com/18572799/48225423-b23ff100-e394-11e8-896d-2336799bd1a5.png)
+
+
 ToDo
 ----
 - TDD.
@@ -33,9 +38,3 @@ ToDo
 - attempt in Java.
 - first test result always unusually high... why?
 - further "own" algorithms as per course suggested notes.
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/18572799/48225221-1ada9e00-e394-11e8-90fc-306921cdd552.png)
