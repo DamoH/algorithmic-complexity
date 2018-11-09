@@ -8,20 +8,22 @@ class QuickSort
 
     for i in 1..100 do
       a = Time.now.nsec
-      # Quick sort algo here....
-      pivot = myArray.delete_at(rand(myArray.length)) # random pivot saved
-      left = Array.new
-      right = Array.new
-      myArray.each do |x|
-        if x <= pivot
-          left << x
-        else
-          right << x
+      def sortLoop(myArray)
+        # Quick sort algo here....
+        return myArray if myArray.length <= 1
+        pivot = myArray.delete_at(rand(myArray.length)) # random pivot saved
+        left = Array.new
+        right = Array.new
+        myArray.each do |x|
+          if x <= pivot
+            left << x
+          else
+            right << x
+          end
         end
-      end
-      # would return sorted array....
-      # return *quick_sort(left), pivot ,*quick_sort(right)
+        return *sortLoop(left), pivot ,*sortLoop(right)
       # ************************
+      end
       b = Time.now.nsec
       results << (b - a)
       i += 1
