@@ -23,9 +23,9 @@ The CohortGroupingB tests were run with '8' and '16' groups, with no significant
 
 Notes
 -----
-These plotted results were initially run from repl.it which didn't seem to be able to cope with larger data arrays (Mac terminal/irb was rounding all results to the nearest 1000), but I switched to irb when the rounding did not seem to matter due to dealing with much larger data sets - 50,000 to 1,000,000.
+As mentioned previously, Ruby's '.library' function plotted results were initially run from repl.it which didn't seem to be able to cope with larger data arrays (Mac terminal/irb was rounding all results to the nearest 1000, and therefore more often to '0'), but I switched to irb for the later tests when the rounding did not seem to matter due to dealing with much larger data sets - 50,000 to 1,000,000.
 
-The tests are run 100 times and as a result of some skewed results (at seemingly only the top end), I removed the "outliers" by using the ".pop" and ".shift" functions to remove the top 10 and bottom 10 results.
+The tests are all run 100 times and as a result of some skewed results (at seemingly only the top end), I removed the "outliers" by using the ".pop" and ".shift" functions to remove the top 10 and bottom 10 results 'before' averaging.
 
 
 ![image](https://user-images.githubusercontent.com/18572799/48225221-1ada9e00-e394-11e8-90fc-306921cdd552.png)
