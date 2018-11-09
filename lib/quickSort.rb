@@ -6,9 +6,6 @@ class QuickSort
     num.times { myArray << rand(1000) }
     results = []
 
-    # stops if array 0 or 1 in size....
-    # return myArray if myArray.length <= 1
-
     for i in 1..100 do
       a = Time.now.nsec
       # Quick sort algo here....

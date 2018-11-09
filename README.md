@@ -1,22 +1,24 @@
 # algorithmic-complexity
 
 
-This is the "Ruby" code for the testing how efficient algorithms are and, in the initial cases, timing code and the following library functions :
+This is my "Ruby" code for the testing how efficient algorithms are and, in the initial cases, timing code for the following library functions :
 
 - last
 - reverse
 - shuffle
 - sort (using 'shuffle' first so as not to bias the results, as per the course instructions).
 
-You just have to amend the code in the for loop in lines 10 & 12 to be able to test the additional Ruby '.library' functions (in the last.rb file)
+For these particular library functions, and within the code in the 'last.rb' file, you just have to amend the code in the 'for loop' on lines 10 & 12 - as per the commented out text - to be able to test the additional Ruby '.library' functions. This has to be copied and run in the browser based repl.it due to roundings on timings down to 0 in irb.
 
-I have attached some of my spreadsheet results and charts plotting them (these are ".numbers" attachments). You will note that on one of my initial charts the x-axis is not totally linear and is split into 0-1000 (100 steps) and 1000 to 5000 (with 1000 steps).... so in effect this is 2 adjoined charts with different ranges. However, on additional attached charts I have corrected this.
+The remainder of the algorithms code can be run from the terminals irb (guidance start up code is in the 'feature_tests.rb' file) ie for non-library functions, due to higher numbers of array elements and therefore longer timing results.
 
-Once I was plotting arrays with elements ranging from 50,000 to 1,000,000 did I start noticing curvature of the graph plotting... depending on the efficiency (or lack of) my "own" algorithms ie ownShuffle.rb
+I have included below my spreadsheet results and charts plotting them.
+
+Once I was plotting arrays with elements ranging from 50,000 to 1,000,000 did I start noticing curvature of the graphs... depending on the efficiency (or lack of) my "own" algorithms ie ownShuffle.rb (see below)
 
 I also had problems with the Ruby 'Time.now.nsec' (for registering nanoseconds), as at higher array element volumes it started registering declining and then negative numbers. This was due to "only" the nanoseconds part of the time stamp being registered (discovered after reading the Ruby docs). This seemed to be fixed my switching to a 'Time.now.to_f' method chain, and then multiplying the results, in the 'runner' method, by 1bn (this was tested for similarities with previous low number results).
 
-The CohortGroupingB tests were run with '8' and '16' groups, with no significant difference between the two (so only the x8 size was plotted/charted).
+The CohortGroupingB tests were run with '8' and '16' groups, with no significant difference between the two (so only the x8 size was plotted/charted, despite having both sets of figures in the table).
 
 
 Notes
@@ -28,7 +30,13 @@ The tests are run 100 times and as a result of some skewed results (at seemingly
 
 ![image](https://user-images.githubusercontent.com/18572799/48225221-1ada9e00-e394-11e8-90fc-306921cdd552.png)
 
+
+You will notice below the time improvement on my ownShuffle algo (from the green to the yellow line) once I had refactored so that the shuffle code replaced an element at the end of the array (index '-1'), instead of at the start (index '0'). This, I believe, is due to not having to shift all elements along in the shuffle.
+
 ![image](https://user-images.githubusercontent.com/18572799/48225423-b23ff100-e394-11e8-896d-2336799bd1a5.png)
+
+
+The chart below is for my BubbleSort and QuickSort algorithms. I used smaller data sets (2500 - 50000) for these, due to the time they were taking to run. They are very similar and on re-running the code I could see no reason for the occasional spike (this happened on a couple of runs). Also, for some reason, the BubbleSort also took consistently longer to run in irb despite producing similar results!... there must be something else, other than the algo being timed, slowing this down - I am yet to get to the bottom of this...
 
 ![image](https://user-images.githubusercontent.com/18572799/48225571-1498f180-e395-11e8-9153-b7b9241a562a.png)
 
@@ -41,3 +49,5 @@ ToDo
 - attempt in Java.
 - first test result always unusually high... why?
 - further "own" algorithms as per course suggested notes.
+- code and plot additional sorting algorithms.
+- work out anomalies mentioned above.
