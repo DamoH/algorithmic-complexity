@@ -36,7 +36,7 @@ You will notice below the time improvement on my ownShuffle algo (from the green
 ![image](https://user-images.githubusercontent.com/18572799/48225423-b23ff100-e394-11e8-896d-2336799bd1a5.png)
 
 
-The chart below is for my BubbleSort and QuickSort algorithms. I used smaller data sets (2500 - 50000) for these, due to the time they were taking to run. They are very similar and on re-running the code I could see no reason for the occasional spike (this happened on a couple of runs). Also, for some reason, the BubbleSort also took consistently longer to run in irb despite producing similar results!... there must be something else, other than the algo being timed, slowing this down - I am yet to get to the bottom of this...
+The chart below is for my BubbleSort and QuickSort algorithms. I used smaller data sets (2500 - 50000) for these, due to the time that the BubbleSort algo was taking to run. As expected the QuickSort was considerably faster...
 
 ![image](https://user-images.githubusercontent.com/18572799/48225571-1498f180-e395-11e8-9153-b7b9241a562a.png)
 
@@ -50,4 +50,3 @@ ToDo
 - first test result always unusually high... why?
 - further "own" algorithms as per course suggested notes.
 - code and plot additional sorting algorithms.
-- work out anomalies mentioned above.
