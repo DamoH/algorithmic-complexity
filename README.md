@@ -38,7 +38,7 @@ You will notice below the time improvement on my ownShuffle algo (from the green
 
 The chart below is for my BubbleSort and QuickSort algorithms. I used smaller data sets (2500 - 50000) for these, due to the time that the BubbleSort algo was taking to run. As expected the QuickSort was considerably faster...
 
-![image](https://user-images.githubusercontent.com/18572799/48225571-1498f180-e395-11e8-9153-b7b9241a562a.png)
+![image](https://user-images.githubusercontent.com/18572799/48257432-6e87ce80-e40a-11e8-95b6-eea84c36fbfb.png)
 
 
 
