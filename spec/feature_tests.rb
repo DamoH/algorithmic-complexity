@@ -12,6 +12,6 @@ load './lib/bubbleSort.rb'
 test = BubbleSort.new
 test.runner
 
-load './lib/bubbleSort.rb'
-test = BubbleSort.new
+load './lib/quickSort.rb'
+test = QuickSort.new
 test.runner
