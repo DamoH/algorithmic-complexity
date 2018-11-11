@@ -9,7 +9,8 @@ public class Shuffle {
 //        System.out.println("Shuffled array: " + Arrays.toString(arr)); // only need .util.*
 
 // can also shuffle a list by creating an array list object
-//        List arrList = new ArrayList();
+//        List arrList = new ArrayList(); // need to import ArrayList and List?
+//        arrList.add("Object 1");
 // and then...
 //        Collections.shuffle(arrList);
 

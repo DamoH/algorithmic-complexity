@@ -13,6 +13,7 @@ public class Sort {
 
         Integer arr[] = { 535, 77, 5353, 22, 75, 34, 88 };
 //        String arr[] = { "b", "e", "a", "c", "d" };       // can't get alphabetically working like this yet
+        long start = System.nanoTime();
         int temp;
         for (int i=1; i<arr.length; i++) { // own "insert" Sort algo!
             for (int j=i; j>0; j--) {
@@ -23,7 +24,10 @@ public class Sort {
                 }
             }
         }
+        long end = System.nanoTime();
+        long nanoseconds = (end - start);
         System.out.println(Arrays.toString(arr));
+        System.out.println("Time in nanoseconds: " + nanoseconds);
 //
 //        for (int x=0; x<arr.length; x++) {        // for the alphabetical sort attempt
 //            System.out.println(arr[i]);
